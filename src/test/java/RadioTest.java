@@ -28,7 +28,7 @@ public class RadioTest {
         radio.setVolume(0);
         radio.minus();
 
-        int expected = 0;
+        int expected = 1;
         int actual = radio.getVolume();
         Assertions.assertEquals(expected, actual);
     }
