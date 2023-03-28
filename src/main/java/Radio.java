@@ -2,20 +2,7 @@ public class Radio {
     private int NumberStation;
     private int Volume;
 
-    public void next() {
-        if (NumberStation != 9) {
-            NumberStation++;
-        } else {
-            NumberStation = 0;
-        }
-    }
-    public void prev() {
-        if (NumberStation != 0) {
-            NumberStation--;
-        } else {
-            NumberStation = 9;
-        }
-    }
+
     public void plus() {
         if (Volume == 10) {
             Volume++;
