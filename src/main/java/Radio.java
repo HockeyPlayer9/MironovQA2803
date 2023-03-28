@@ -47,7 +47,7 @@ public class Radio {
     }
 
     public void setVolume(int Volume) {
-        if (Volume < 0) {
+        if (Volume <= 0) {
             return;
         }
 
