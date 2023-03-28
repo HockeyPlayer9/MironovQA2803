@@ -16,11 +16,23 @@ public class RadioTest {
     public void MaxStationNumber() {
         Radio radio = new Radio();
 
-        radio.setNumberStation(10);
+        radio.setNumberStation(9);
+        radio.next();
 
         int expected = 0;
         int actual = radio.getNumberStation();
         Assertions.assertEquals(expected, actual);
+    }
+    @Test
+    public void MinStationNumber() {
+            Radio radio = new Radio();
+
+            radio.setNumberStation(0);
+            radio.prev();
+
+            int expected = 9;
+            int actual = radio.getNumberStation();
+            Assertions.assertEquals(expected, actual);
     }
     @Test
     public void MinVolume() {
