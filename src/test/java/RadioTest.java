@@ -25,7 +25,7 @@ public class RadioTest {
     @Test
     public void MinVolume() {
         Radio radio = new Radio();
-        radio.setVolume(-1);
+        radio.setVolume(0);
         radio.minus();
 
         int expected = 0;
