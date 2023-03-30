@@ -19,7 +19,7 @@ public class Radio {
     }
 
     public void plus() {
-        if (Volume == 10) {
+        if (Volume != 10) {
             Volume++;
         } else {
             Volume = 10;
@@ -27,7 +27,9 @@ public class Radio {
     }
 
     public void minus() {
-        if (Volume <= 0) ;
+        if (Volume != 0){
+            Volume--;
+        }
 
         else {
             Volume = 0;
@@ -53,7 +55,7 @@ public class Radio {
     }
 
     public void setVolume(int Volume) {
-        if (Volume <= 0) {
+        if (Volume < 0) {
             return;
         }
 
